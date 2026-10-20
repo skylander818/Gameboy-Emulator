@@ -9,13 +9,11 @@ public:
 
 
 int main(int argc, char* arvg[]){
-    std::string x = arvg[1];
-    CGB gameboy;
-    gameboy.running = true;
-    if (gameboy.running){
-        std::cout <<"Running\n" ;
-        std::cout <<x;
+    if (argc<2){
+        std::cout<<"Please provide a rom path" <<std::endl;
+        return 0;
     }
-    return 1;
+    std::string rom_path = arvg[1];
+
 }
 
