@@ -1,7 +1,7 @@
 #include "gameboy.hpp"
 
 
-class cpu {
+class cpu_t {
 public:
     std::uint16_t AF;
     std::uint16_t BC;
@@ -9,5 +9,18 @@ public:
     std::uint16_t HL;
     std::uint16_t SP;
     std::uint16_t PC;
+    std::uint16_t opcode;
     
 };
+
+
+void emulate_instructions(cpu_t *cpu) {
+
+    switch (){
+        case 0x0;
+
+
+
+    }
+
+}
