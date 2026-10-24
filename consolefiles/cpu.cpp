@@ -16,10 +16,4 @@ public:
 
 
 void emulate_instructions(cpu_t cpu) {
-    switch (cpu.opcode){
-        default:
-            std::cout <<"Hello World";
-            break;
-    }
-
 }
