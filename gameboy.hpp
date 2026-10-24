@@ -16,3 +16,7 @@
 #include "consolefiles\mmu.cpp"
 #include "consolefiles\timer.cpp"
 #include "consolefiles\audio.cpp"
+
+
+
+void emulate_instructions(cpu_t cpu);

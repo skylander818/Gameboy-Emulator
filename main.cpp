@@ -14,6 +14,8 @@ int main(int argc, char* arvg[]){
         return 0;
     }
     std::string rom_path = arvg[1];
-
+    cpu_t cpu = {0};
+    cpu.opcode = 0x0;
+    emulate_instructions(cpu);
 }
 
