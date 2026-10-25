@@ -1,21 +1,25 @@
-#include "gameboy.hpp"
+#include "gameboy/audio.hpp"
+#include "gameboy/cpu.hpp"
+#include "gameboy/joypad.hpp"
+#include "gameboy/mbc.hpp"
+#include "gameboy/mmu.hpp"
+#include "gameboy/timer.hpp"
+#include <iostream>
+
+
 
 //GameBoy Color
-//CGB
-class CGB{
-public:
-    bool running; 
-};
-
+//"C:\ROMs\Pokemon - Blue Version (USA, Europe) (SGB Enhanced).gb"
 
 int main(int argc, char* arvg[]){
     if (argc<2){
         std::cout<<"Please provide a rom path" <<std::endl;
         return 0;
     }
-    std::string rom_path = arvg[1];
     memory_t memory;
-    memory.rom_load(rom_path);  
+    std::string rom_file_path_string = arvg[1];
+    memory.rom_file_path = rom_file_path_string;
+    memory.rom_init();
 }
 
 
